@@ -80,7 +80,7 @@ class sagepay_zc_payment extends AbstractSagepayAPI
             return;
         }
         $check_flag = false;
-        $sql = "SELECT zone_id FROM " . TABLE_ZONES_TO_GEO_ZONES . " WHERE geo_zone_id = '" . $this->getModuleDefineValue('_ZONE') . "' AND zone_country_id = '" . $order->billing['country']['id'] . "' ORDER BY zone_id";
+        $sql = "SELECT zone_id FROM " . TABLE_ZONES_TO_GEO_ZONES . " WHERE geo_zone_id = '" . (int)$this->getModuleDefineValue('_ZONE') . "' AND zone_country_id = '" . (int)$order->billing['country']['id'] . "' ORDER BY zone_id";
         $checks = $db->Execute($sql);
         foreach ($checks as $check) {
             if ($check['zone_id'] < 1) {
