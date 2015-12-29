@@ -64,7 +64,7 @@ class sagepay_zc_payment extends AbstractSagepayAPI
         if (is_object($order)) {
             $this->update_status();
         }
-        $new_version_details = plugin_version_check_for_updates(2049, '1.0');
+        $new_version_details = plugin_version_check_for_updates(2049, '1.00');
         if ($new_version_details !== FALSE) {
             $this->title .= '<span class="alert">' . ' - NOTE: A NEW VERSION OF THIS PLUGIN IS AVAILABLE. <a href="' . $new_version_details['link'] . '" target="_blank">[Details]</a>' . '</span>';
         }
@@ -303,5 +303,21 @@ if (!function_exists('plugin_version_check_for_updates')) {
         // check whether present ZC version is compatible with the latest available plugin version
         if (!in_array('v'. PROJECT_VERSION_MAJOR . '.' . PROJECT_VERSION_MINOR, $data[$lookup_index]['zcversions'])) $new_version_available = FALSE;
         return ($new_version_available) ? $data[$lookup_index] : FALSE;
+    }
+}
+if (!function_exists('issetorArray')) {
+    /**
+     * function issetorArray
+     *
+     * returns an array[key] or default value if key does not exist
+     *
+     * @param array $array
+     * @param $key
+     * @param null $default
+     * @return mixed
+     */
+    function issetorArray(array $array, $key, $default = null)
+    {
+        return isset($array[$key]) ? $array[$key] : $default;
     }
 }
