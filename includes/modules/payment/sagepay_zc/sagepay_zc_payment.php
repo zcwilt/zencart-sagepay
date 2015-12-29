@@ -64,7 +64,7 @@ class sagepay_zc_payment extends AbstractSagepayAPI
         if (is_object($order)) {
             $this->update_status();
         }
-        $new_version_details = plugin_version_check_for_updates(1292, '2015-05-31 K6');
+        $new_version_details = plugin_version_check_for_updates(2049, '1.0');
         if ($new_version_details !== FALSE) {
             $this->title .= '<span class="alert">' . ' - NOTE: A NEW VERSION OF THIS PLUGIN IS AVAILABLE. <a href="' . $new_version_details['link'] . '" target="_blank">[Details]</a>' . '</span>';
         }
