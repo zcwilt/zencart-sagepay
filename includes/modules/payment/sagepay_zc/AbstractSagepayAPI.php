@@ -45,6 +45,11 @@ class AbstractSagepayAPI extends base
                       PRIMARY KEY (`id`))";
             $db->Execute($sql);
         }
+        if (!$sniffer->field_exists(TABLE_SAGEPAY_TRANSACTION, 'api_type')) {
+            $sql = "ALTER TABLE TABLE_SAGEPAY_TRANSACTION ADD api_type VARCHAR( 40 ) NOT NULL AFTER vpstxid";
+            $db->Execute($sql);
+        }
+
     }
 
     /**
