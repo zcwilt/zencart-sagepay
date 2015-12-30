@@ -22,3 +22,26 @@ The following should be noted
 
 ## Testing
 
+Details for Credit Card numbers that can be used for testing are shown in the admin > modules > payment page for Sagepay, and repeated here.
+
+* VISA 4929000000006
+* MASTERCARD 5404000000000001
+* DELTA 4462000000000003
+* SOLO 6334900000000005 Issue 01
+* DOMESTIC MAESTRO 5641820000000005 Issue 01
+* AMEX 374200000000004
+* ELECTRON 4917300000000008
+* JCB 3569990000000009
+* DINERS 36000000000008
+
+You will need to supply the following values for
+CV2, Billing Address and Billing Post Code Numbers.
+
+* CV2 123
+* Billing Address Numbers 88
+* Billing Post Code Numbers 412
+
+These are the only values which will return as Matched.
+
+You will also need to enter the 3D Secure password as " password " (it is case sensitive)<br >
+so as the 3D Secure authentication returns Fully Authenticated.
