@@ -17,7 +17,7 @@ When installing the payment module from your admin > moduls > payment,
 The following should be noted
 
 * For the password field, this must be your encrypted password, not your Sagepay login password.
-* If you are in testing mode, you may want to set the Debug Mode to log or Log and Email
+* If you are in testing mode, you may want to set the Debug Mode to `log` or `Log and Email`
 
 
 ## Testing
