@@ -45,3 +45,8 @@ These are the only values which will return as Matched.
 
 You will also need to enter the 3D Secure password as " password " (it is case sensitive)<br >
 so as the 3D Secure authentication returns Fully Authenticated.
+
+## Attribution
+
+This Integration was initially inspired by https://www.zen-cart.com/downloads.php?do=file&id=959
+
