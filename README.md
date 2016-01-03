@@ -19,6 +19,9 @@ The following should be noted
 * For the password field, this must be your encrypted password, not your Sagepay login password.
 * If you are in testing mode, you may want to set the Debug Mode to `log` or `Log and Email`
 
+## Dependancies
+
+Currently Sagepay requires that you have the PHP mcrypt module installed.
 
 ## Testing
 
