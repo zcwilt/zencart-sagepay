@@ -22,6 +22,8 @@ The following should be noted
 ## Dependancies
 
 Currently Sagepay requires that you have the PHP mcrypt module installed.
+If you have the Suhosin extension installed, you may have problems with this module.
+Please see [this faq entry](https://www.zen-cart.com/showthread.php?219158-Sagepay-Form-Integration) for more details.
 
 ## Testing
 
